@@ -1,4 +1,4 @@
-FROM docker.io/zerosizer/eap70-khan
+FROM dns.ocp.tg.com:5000/jboss-eap-6/eap64-openshift:1.8
 
 USER root
 
