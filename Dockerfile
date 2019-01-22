@@ -4,11 +4,11 @@ USER root
 
 ENV AUTO_DEPLOY_EXPLODED true
 
-ADD jboss-spring-petclinic.war /opt/eap/standalone/deployments/jboss-spring-petclinic.war
+ADD jboss-spring-petclinic.war /deployments/jboss-spring-petclinic.war
 
-ADD  ec2-ug-ko_kr001.pdf /opt/eap/standalone/deployments/jboss-spring-petclinic.war/resources/images/
+ADD  ec2-ug-ko_kr001.pdf /deployments/jboss-spring-petclinic.war/resources/images/
 
-RUN chown -R jboss:jboss /opt/eap/standalone/deployments/
+RUN chown -R jboss /deployments/
 
 USER 185
 
